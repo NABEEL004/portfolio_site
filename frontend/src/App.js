@@ -6,7 +6,7 @@ import Contact from './pages/Contact'
 
 function App() {
   return (
-    <>
+    <div className='bg-[#FDFAE3] top-0 left-0 w-full h-full absolute px-32'>
       <BrowserRouter>
         <Routes>
           <Route index element={ <Landing />} />
@@ -15,7 +15,7 @@ function App() {
           <Route path='/contact' element = { <Contact/> }/>
         </Routes>
       </BrowserRouter>
-    </>
+    </div>
   );
 }
 

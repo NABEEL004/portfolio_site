@@ -2,6 +2,13 @@
 module.exports = {
   content: [
     "./src/App.js",
+    "./src/pages/About.js",
+    "./src/pages/Landing.js",
+    "./src/pages/Contact.js",
+    "./src/pages/Projects.js",
+    "./src/components/Header.js",
+    "./src/components/AboutMe.js",
+    "./src/components/NavBar.js",
   ],
   theme: {
     extend: {
