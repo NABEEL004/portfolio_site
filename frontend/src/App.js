@@ -3,6 +3,7 @@ import Landing from './pages/Landing'
 import About from './pages/About'
 import Projects from './pages/Projects'
 import Contact from './pages/Contact'
+import NoPage from './pages/NoPage'
 
 function App() {
   return (
@@ -10,9 +11,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route index element={ <Landing />} />
+          <Route path='/landing' element = { <Landing/> }/>
           <Route path='/about' element = { <About/> }/>
           <Route path='/projects' element = { <Projects/> }/>
           <Route path='/contact' element = { <Contact/> }/>
+          <Route path='/*' element = { <NoPage/> }/>
         </Routes>
       </BrowserRouter>
     </div>
