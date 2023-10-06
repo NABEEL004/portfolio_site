@@ -5,12 +5,14 @@ import NavBar from '../components/NavBar'
 
 export default function About() {
   return (
-    <div className="flex flex-col h-screen v-full">
-      <div className='sticky top-0 w-screen mx-0 px-0 flex sm:flex-row flex-col sm:justify-between justify-center bg-[#FDFAE3] z-9999'>
+    <div className="flex flex-col h-full v-full justify-center items-stretch">
+      <div className='sticky top-0 w-screen mx-0 px-0 flex lg:flex-row flex-col sm:justify-between justify-center bg-[#FDFAE3] z-9999'>
         <Header/>
         <NavBar/>
       </div>
-      <AboutMe/>
+      <div className='h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)] flex justify-center items-center'>
+        <AboutMe/>  
+      </div>
     </div>
   )
 }

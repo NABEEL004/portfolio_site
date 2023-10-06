@@ -7,7 +7,7 @@ export default function Project(prop) {
   const image_url = require('../images/' + prop.image)
 
   return (
-    <div className='group flex flex-col justify-between items-center text-center w-[300px] bg-white h-[420px] m-3 shadow-md rounded-2xl hover:scale-105 hover:shadow-xl transition overflow-hidden'>
+    <div className='group flex flex-col justify-between items-center text-center w-[300px] bg-white h-[420px] m-3 shadow-md rounded-2xl hover:scale-105 hover:shadow-xl transition overflow-hidden z-0 hover:z-0'>
         <div className= "h-1/2"><img src={image_url} alt="project visual" className="h-[100%] object-top group-hover:-translate-y-7 group-hover:opacity-70 transition-all duration-300"/></div>
         <div className="font-mono font-bold text-xl group-hover:-translate-y-7 transition duration-300">{prop.title}</div>
         <div className="w-[270px] pt-2 font-mono text-base group-hover:-translate-y-7 transition duration-300">{prop.description}</div>
