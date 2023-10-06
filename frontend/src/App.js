@@ -7,7 +7,7 @@ import NoPage from './pages/NoPage'
 
 function App() {
   return (
-    <div className='bg-[#FDFAE3] top-0 left-0 w-full h-full absolute px-32'>
+    <div className='bg-[#FDFAE3] top-0 left-0 w-full h-full sticky min-h-screen'>
       <BrowserRouter>
         <Routes>
           <Route index element={ <Landing />} />

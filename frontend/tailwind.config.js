@@ -9,6 +9,8 @@ module.exports = {
     "./src/components/Header.js",
     "./src/components/AboutMe.js",
     "./src/components/NavBar.js",
+    "./src/components/Project.js",
+    "./src/components/Modal.js",
   ],
   theme: {
     extend: {
