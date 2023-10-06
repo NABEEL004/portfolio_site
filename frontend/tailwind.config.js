@@ -6,6 +6,7 @@ module.exports = {
     "./src/pages/Landing.js",
     "./src/pages/Contact.js",
     "./src/pages/Projects.js",
+    "./src/pages/NoPage.js",
     "./src/components/Header.js",
     "./src/components/AboutMe.js",
     "./src/components/NavBar.js",
