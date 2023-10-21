@@ -12,8 +12,8 @@ export default function Project(prop) {
         <div className="font-mono font-bold text-xl group-hover:-translate-y-7 transition duration-300">{prop.title}</div>
         <div className="w-[270px] pt-2 font-mono text-base group-hover:-translate-y-7 transition duration-300">{prop.description}</div>
         <div className='flex translate-y-[100px] group-hover:-translate-y-6 transition-all duration-500 overflow-hidden '>
-          <a href="https://www.youtube.com/channel/UC2zjowvQDHTSS65mvEU-y8Q" target="_blank"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 hover:bg-red-500 rounded-full'><img src={youtubeIcon} className="h-[48px]" alt="youtube" /></div></a>
-          <a href="https://github.com/NABEEL004" target="_blank"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 hover:bg-purple-600 rounded-full'><img src={githubIcon} className="h-[48px]" alt="github" /></div></a>
+          <a href="https://www.youtube.com/channel/UC2zjowvQDHTSS65mvEU-y8Q" target="_blank"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={youtubeIcon} className="h-[48px]" alt="youtube" /></div></a>
+          <a href="https://github.com/NABEEL004" target="_blank"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={githubIcon} className="h-[48px]" alt="github" /></div></a>
         </div>
     </div>
   )
