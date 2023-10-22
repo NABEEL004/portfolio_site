@@ -17,6 +17,7 @@ module.exports = {
     extend: {
       fontFamily:{
         'title':['Montserrat', 'ui-serif', 'Georgia', 'Cambria', "Times New Roman", 'Times', 'serif'],
+        'poppins':['Poppins', 'serif'],
       },
     },
   },

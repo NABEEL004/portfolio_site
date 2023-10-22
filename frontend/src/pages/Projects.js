@@ -12,6 +12,27 @@ const future_data = [
   { name: 'Home Advantage?', skill: 'Data Analysis', description: 'A data analysis project giving insights into football teams\' home performances', languages: 'Python, NumPy, Pandas', image: 'football.jpg'},
 ]
 
+const about_data = [
+  {
+    img: "",
+    alt: "image of portfolio site",
+    title: "Vanilla Portfolio",
+    description: "A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript"
+  },
+  {
+    img: "",
+    alt: "image of portfolio site",
+    title: "React Portfolio",
+    description: "A frontend project to display my personal projects"
+  },
+  {
+    img: "",
+    alt: "image of demo board",
+    title: "Smart Aquaponics",
+    description: "An embedded project showcasing elements of a smart aquaponics system"
+  },
+]
+
 const projectsComponents = project_data.map((project, key) => <Project key ={key} title = {project.name} skill = {project.skill} description={project.description } language = {project.languages} image={project.image} />)
 
 export default function Projects() {
