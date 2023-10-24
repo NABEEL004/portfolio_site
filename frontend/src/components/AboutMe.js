@@ -7,9 +7,9 @@ export default function AboutMe(props) {
 
   return (
     <motion.div
-      animate = {{ y: 20, opacity: 1}}
+      // animate = {{ y: 20, opacity: 1}}
       // initial = {{ y: -20, opacity: 0.5}}
-      transition = {{ type:'spring', stiffness: 500}}
+      // transition = {{ type:'spring', stiffness: 500}}
       className=' bg-[#FDFAE3] flex flex-col justify-between items-center w-[400px] h-[520px] border-gray-300 border rounded-3xl mx-3 px-7 py-8'>
         <img src={image_url} alt={props.alt} className='h-36'/>
         <h1 className='font-bold font-title text-[1.4rem] h-[40px]'>{props.title}</h1>

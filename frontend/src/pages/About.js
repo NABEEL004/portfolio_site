@@ -25,7 +25,34 @@ const about_data = [
   },
 ]
 
-const about_components = about_data.map((about, key) => <AboutMe key={key} image={about.img} alt={about.alt} title={about.title} description={about.description} />)
+const parentVariants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    transition: {
+      type: 'spring',
+      duration: 0.1,
+      staggerChildren: 0.3
+    }
+  }
+}
+
+const childVariants = {
+  hidden: {
+    y: -20,
+    opacity: 0
+  },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      type: 'tween',
+      duration: 0.7,
+    }
+  }
+}
 
 export default function About() {
   return (
@@ -36,11 +63,22 @@ export default function About() {
         <Header/>
         <NavBar/>
       </div>
-      <div className='h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)] flex flex-col xl:flex-row justify-center items-center'>
-        {/* <AboutMe title={about_data[0].title} description={about_data[0].description}/>   */}
-        {/* <AboutMe />   */}
-        {about_components}
-      </div>
+      <motion.div 
+      variants={parentVariants}
+      initial="hidden"
+      animate="visible"
+      className='h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)] flex flex-col xl:flex-row justify-center items-center'>
+        {/* {about_data.map((about, key) => <AboutMe variants={childVariants} key={key} image={about.img} alt={about.alt} title={about.title} description={about.description} />)} */}
+        <motion.div variants={childVariants}>
+          <AboutMe image={about_data[0].img} alt={about_data[0].alt} title={about_data[0].title} description={about_data[0].description} />
+        </motion.div>
+        <motion.div variants={childVariants}>
+          <AboutMe image={about_data[1].img} alt={about_data[1].alt} title={about_data[1].title} description={about_data[1].description} />
+        </motion.div>
+        <motion.div variants={childVariants}>
+          <AboutMe image={about_data[2].img} alt={about_data[2].alt} title={about_data[2].title} description={about_data[2].description} />
+        </motion.div>
+      </motion.div>
     </motion.div>
   )
 }
