@@ -21,9 +21,10 @@ const childVariants = {
 }
 
 const project_data = [
-  { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: 'ReactJS, TailwindCSS', image: 'portfolio.jpg'},
-  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: 'HTML, CSS, JS', image: 'football.jpg'},
+  { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: 'ReactJS, TailwindCSS', image: 'portfolio.jpg'},
+  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: 'HTML, CSS, JS', image: 'football.jpg'},
   { name: 'Smart Aquaponics', skill: 'Embedded Development', description: 'A simple project showcasing elements of a smart aquaponics system', languages: 'C++', image: 'aquaponics.jpg'},
+  { name: 'Pong', skill: 'Game Development', description: 'A simple game of pong hosted on a website', languages: 'HTML, CSS, JS', image: 'pong.png'},
 ]
 
 const future_data = [
