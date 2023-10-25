@@ -11,6 +11,7 @@ module.exports = {
     "./src/components/AboutMe.js",
     "./src/components/NavBar.js",
     "./src/components/Project.js",
+    "./src/components/Language.js",
     "./src/components/Modal.js",
   ],
   theme: {

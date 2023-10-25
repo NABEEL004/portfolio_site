@@ -21,14 +21,12 @@ const childVariants = {
 }
 
 const project_data = [
-  { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: 'ReactJS, TailwindCSS', image: 'portfolio.jpg'},
-  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: 'HTML, CSS, JS', image: 'football.jpg'},
-  { name: 'Smart Aquaponics', skill: 'Embedded Development', description: 'A simple project showcasing elements of a smart aquaponics system', languages: 'C++', image: 'aquaponics.jpg'},
-  { name: 'Pong', skill: 'Game Development', description: 'A simple game of pong hosted on a website', languages: 'HTML, CSS, JS', image: 'pong.png'},
+  { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: ['HTML', 'CSS', 'JS'], github:'html-css-js-portfolio', image: 'vanilla_portfolio.jpeg'},
+  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: ['ReactJS', 'TailwindCSS'], github:'portfolio_site', image: 'react_portfolio.jpeg'},
+  { name: 'Smart Aquaponics', skill: 'Embedded Development', description: 'A simple project showcasing elements of a smart aquaponics system', languages: ['C++'], github:'', image: 'aquaponics.jpeg'},
+  { name: 'Pong', skill: 'Game Development', description: 'A simple game of pong hosted on a website', languages: ['HTML', 'CSS', 'JS'], github:'pong-js', image: 'pong.png'},
 ]
 
-const future_data = [
-]
 
 const about_data = [
   {
@@ -51,12 +49,12 @@ const about_data = [
   },
 ]
 
-const projectsComponents = project_data.map((project, key) => <Project key ={key} title = {project.name} skill = {project.skill} description={project.description } language = {project.languages} image={project.image} />)
+const projectsComponents = project_data.map((project, key) => <Project key ={key} title = {project.name} skill = {project.skill} description={project.description } language = {project.languages} image={project.image} github={project.github} />)
 
 export default function Projects() {
   const breakpoints = [
     { width: 1, itemsToShow: 1 },
-    { width: 700, itemsToShow: 2 },
+    { width: 650, itemsToShow: 2 },
     { width: 1000, itemsToShow: 3 },
   ]
 

@@ -9,14 +9,21 @@
     /* width: 200px; */
 }
 
-.rec-arrow-left:hover, .rec-arrow-left:right {
+.rec-arrow-left:hover, .rec-arrow-right:hover {
     box-shadow: 0 0 2px 0px #333 !important;
+    /* background-color: #B16F36 !important ; */
 }
 
 .rec-dot_active {
     box-shadow: 0 0 1px 3px #D4A269 !important;
     /* background-color: rgba(103,58,183,.5); */
     background-color: #B16F36 !important;
+    color: #B16F36 !important;
+}
+
+.fJOMqa:hover {
+    /* background-color: aqua !important; */
+    color: #B16F36 !important;
 }
 
 
