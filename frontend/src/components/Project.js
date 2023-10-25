@@ -11,10 +11,10 @@ export default function Project(prop) {
   const language_components = languages.map((item, key) => <Language key={key} value={item} />)
 
   return (
-    <div className='relative group flex flex-col justify-between items-center text-center w-[300px] bg-white h-[420px] m-3 shadow-md rounded-2xl hover:scale-105 hover:shadow-xl transition overflow-hidden z-0 hover:z-0'>
+    <div className='relative group flex flex-col justify-between items-center text-center w-[220px] sm:w-[300px] bg-white h-[350px] sm:h-[420px] m-0 sm:m-3 shadow-md rounded-2xl hover:scale-105 hover:shadow-xl transition overflow-hidden z-0 hover:z-0'>
         <div className= "h-1/2"><img src={image_url} alt="project visual" className="object-cover h-[100%] w-auto object-top group-hover:-translate-y-7 group-hover:opacity-70 transition-all duration-300"/></div>
-        <div className="font-mono font-bold text-xl group-hover:-translate-y-7 transition duration-300">{prop.title}</div>
-        <div className="w-[270px] pt-2 font-mono text-base group-hover:-translate-y-7 transition duration-300">{prop.description}</div>
+        <div className="font-mono font-bold text-lg sm:text-xl group-hover:-translate-y-7 transition duration-300">{prop.title}</div>
+        <div className="w-[200px] sm:w-[270px] pt-2 font-mono text-sm sm:text-base group-hover:-translate-y-7 transition duration-300">{prop.description}</div>
         <div className='group-hover:opacity-0 transition-all absolute bottom-[2.8rem] duration-300 group-hover:bottom-[4rem] flex flex-row translate-y-[20px]'>{language_components}</div>
         {/* <Language>Test</Language> */}
         <div className='flex translate-y-[100px] group-hover:-translate-y-6 delay-75 transition-all duration-500 overflow-hidden '>

@@ -56,19 +56,17 @@ const childVariants = {
 
 export default function About() {
   return (
-    <motion.div 
-      className="flex flex-col h-full v-full justify-center items-stretch"
-    >
+    <div className="flex flex-col h-full v-full justify-center items-stretch">
       <div className='sticky top-0 w-screen mx-0 px-0 flex lg:flex-row flex-col sm:justify-between justify-center bg-[#FDFAE3] z-9999'>
         <Header/>
         <NavBar/>
       </div>
       <motion.div 
-      variants={parentVariants}
-      initial="hidden"
-      animate="visible"
-      className='h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)] flex flex-col xl:flex-row justify-center items-center'>
-        {/* {about_data.map((about, key) => <AboutMe variants={childVariants} key={key} image={about.img} alt={about.alt} title={about.title} description={about.description} />)} */}
+        variants={parentVariants}
+        initial="hidden"
+        animate="visible"
+        // h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)]
+        className='xl:h-fit flex flex-col xl:flex-row justify-start xl:justify-center items-center'>
         <motion.div variants={childVariants}>
           <AboutMe image={about_data[0].img} alt={about_data[0].alt} title={about_data[0].title} description={about_data[0].description} />
         </motion.div>
@@ -79,6 +77,6 @@ export default function About() {
           <AboutMe image={about_data[2].img} alt={about_data[2].alt} title={about_data[2].title} description={about_data[2].description} />
         </motion.div>
       </motion.div>
-    </motion.div>
+    </div>
   )
 }

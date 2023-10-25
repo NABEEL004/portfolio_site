@@ -8,14 +8,14 @@ import { motion } from 'framer-motion'
 const parentVariants = {
   hidden: {
     opacity: 0.5,
-    width: "30rem",
+    width: "60%",
     borderRadius: "100%",
-    height: "5rem",
+    height: "20%",
     background: "rgba(1,1,1,0)",
   },
   visible: {
-    width: "50rem",
-    height: "32rem",
+    width: "100%",
+    height: "100%",
     borderRadius: "15px",
     background: "#FFF",
     opacity: 1,
@@ -52,22 +52,24 @@ export default function Contact() {
         <NavBar/>
       </div>
       <div className='flex flex-col sm:flex-row justify-center items-center font-mono text-lg sm:text-2xl h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)]'>
-        <motion.div variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col w-3/5 justify-center items-center bg-[rgba(0,0,0,0)] border border-gray-300 rounded-2xl text-black font-medium'>
-          <motion.div variants={childVariants} className='font-black text-4xl'>Nabeel Muhammad</motion.div>
-          <motion.div variants={childVariants} className='font-medium text-lg'>Aspiring Developer</motion.div>
-          <motion.div variants={childVariants} className="m-5 flex justify-center items-center">
-            <a href="mailto:nabeel.mbab@gmail.com">
-              <img src={gmailLogo} alt="gmail logo" className= "h-20 sm:mr-10 sm:h-36 hover:scale-105 transition active:scale-95"/> 
-            </a>
-            <div className="text-left">Contact me at <br/><b><a href="mailto:nabeel.mbab@gmail.com">nabeel.mbab@gmail.com</a></b></div>
-          </motion.div>
-          <motion.div variants={childVariants} className="m-5 flex justify-center items-center">
-            <a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">
-              <img src={linkedinLogo} alt="linkedin logo" className="h-20 sm:mr-10 sm:h-36 hover:scale-105 transition active:scale-95"/>         
-            </a>
-            <div className="text-left">Connect with me on <br/> <b><a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">LinkedIn</a></b>!</div>
+        <div className='w-[30rem] sm:w-[36rem] md:w-[44rem] lg:w-[50rem] h-[28rem] lg:h-[32rem] flex justify-center items-center'>
+          <motion.div variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col w-[50rem] justify-center items-center bg-[rgba(0,0,0,0)] border border-gray-300 rounded-2xl text-black font-medium'>
+            <motion.div variants={childVariants} className='font-black text-3xl lg:text-4xl'>Nabeel Muhammad</motion.div>
+            <motion.div variants={childVariants} className='font-medium text-base lg:text-lg'>Aspiring Developer</motion.div>
+            <motion.div variants={childVariants} className="m-5 flex justify-start items-center w-4/5 sm:w-3/5">
+              <a href="mailto:nabeel.mbab@gmail.com">
+                <img src={gmailLogo} alt="gmail logo" className= "h-20 mr-6 sm:mr-10 sm:h-30 md:h-32 lg:h-36 hover:scale-105 transition active:scale-95"/> 
+              </a>
+              <div className="text-left text-lg md:text-xl lg:text-2xl">Contact me at <br/><b><a href="mailto:nabeel.mbab@gmail.com">nabeel.mbab@gmail.com</a></b></div>
             </motion.div>
-        </motion.div>
+            <motion.div variants={childVariants} className="m-5 flex justify-start items-center w-4/5 sm:w-3/5">
+              <a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">
+                <img src={linkedinLogo} alt="linkedin logo" className="h-20 mr-6 sm:mr-10 sm:h-30 md:h-32 lg:h-36 hover:scale-105 transition active:scale-95"/>         
+              </a>
+              <div className="text-left text-lg md:text-xl lg:text-2xl">Connect with me on <br/> <b><a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">LinkedIn</a></b>!</div>
+              </motion.div>
+          </motion.div>
+        </div>
       </div>
     </div>
   )
