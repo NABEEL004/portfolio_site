@@ -2,6 +2,7 @@ import Header from '../components/Header'
 import React from 'react'
 import AboutMe from '../components/AboutMe'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 import { motion } from 'framer-motion'
 
 const about_data = [
@@ -9,7 +10,7 @@ const about_data = [
     img: "grad.png",
     alt: "image of graduation cap",
     title: "renaissance student",
-    description: "I'm currently pursuing a double degree under the Renaissance Engineering Programme (REP) at Nanyang Technological University (NTU). I'm expecting to graduate in Decemeber 2024 with a Master of Science in Technology Management and a Bachelor in Electrical and Electronics Engineering (EEE)"
+    description: "I'm currently pursuing a double degree under the Renaissance Engineering Programme at Nanyang Technological University. I'm expecting to graduate in Decemeber 2024 with a Master of Science in Technology Management and a Bachelor in Electrical and Electronics Engineering (EEE)."
   },
   {
     img: "code.png",
@@ -21,7 +22,7 @@ const about_data = [
     img: "kopi.png",
     alt: "image of coffee cup",
     title: "appreciates the little things",
-    description: "I am fond of looking for and enjoying the simple things in life. I enjoy capturing everyday moments using my mirrorless, having a good game of volleyball with friends and even sipping on my coffee in the morning."
+    description: "I am fond of looking for and enjoying the simple things in life. I enjoy capturing everyday moments using my mirrorless camera, having a good game of volleyball with friends and even sipping on my coffee in the mornings. I also subject myself to the mental downs of supporting Everton F.C."
   },
 ]
 
@@ -65,18 +66,19 @@ export default function About() {
         variants={parentVariants}
         initial="hidden"
         animate="visible"
-        // h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)]
-        className='xl:h-fit flex flex-col xl:flex-row justify-start xl:justify-center items-center'>
+        // h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:
+        className='xl:h-[calc(100vh-144px)] flex flex-col xl:flex-row justify-start xl:justify-center items-center'>
         <motion.div variants={childVariants}>
           <AboutMe image={about_data[0].img} alt={about_data[0].alt} title={about_data[0].title} description={about_data[0].description} />
         </motion.div>
         <motion.div variants={childVariants}>
           <AboutMe image={about_data[1].img} alt={about_data[1].alt} title={about_data[1].title} description={about_data[1].description} />
         </motion.div>
-        <motion.div variants={childVariants}>
+        <motion.div variants={childVariants} className='mb-6 sm:mb-0'>
           <AboutMe image={about_data[2].img} alt={about_data[2].alt} title={about_data[2].title} description={about_data[2].description} />
         </motion.div>
       </motion.div>
+      <Footer />
     </div>
   )
 }

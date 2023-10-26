@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import React from 'react'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 import Project from '../components/Project'
 import Carousel from 'react-elastic-carousel'
 import { motion } from 'framer-motion'
@@ -71,6 +72,7 @@ export default function Projects() {
           </Carousel>
         </motion.div>
       </div>
+      <Footer />
     </div>
   )
 }

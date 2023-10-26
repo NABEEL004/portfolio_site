@@ -1,6 +1,7 @@
 import Header from '../components/Header'
 import React from 'react'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 import gmailLogo from '../resources/gmail.png'
 import linkedinLogo from '../resources/linkedin.png'
 import { motion } from 'framer-motion'
@@ -52,25 +53,27 @@ export default function Contact() {
         <NavBar/>
       </div>
       <div className='flex flex-col sm:flex-row justify-center items-center font-mono text-lg sm:text-2xl h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)]'>
-        <div className='w-[30rem] sm:w-[36rem] md:w-[44rem] lg:w-[50rem] h-[28rem] lg:h-[32rem] flex justify-center items-center'>
+        <div className='w-[23rem] sm:w-[36rem] md:w-[44rem] lg:w-[50rem] h-[26rem] lg:h-[32rem] flex justify-center items-center'>
           <motion.div variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col w-[50rem] justify-center items-center bg-[rgba(0,0,0,0)] border border-gray-300 rounded-2xl text-black font-medium'>
-            <motion.div variants={childVariants} className='font-black text-3xl lg:text-4xl'>Nabeel Muhammad</motion.div>
+            <motion.div variants={childVariants} className='font-black text-3xl lg:text-4xl mt-12'>Nabeel Muhammad</motion.div>
             <motion.div variants={childVariants} className='font-medium text-base lg:text-lg'>Aspiring Developer</motion.div>
             <motion.div variants={childVariants} className="m-5 flex justify-start items-center w-4/5 sm:w-3/5">
               <a href="mailto:nabeel.mbab@gmail.com">
-                <img src={gmailLogo} alt="gmail logo" className= "h-20 mr-6 sm:mr-10 sm:h-30 md:h-32 lg:h-36 hover:scale-105 transition active:scale-95"/> 
+                <img src={gmailLogo} alt="gmail logo" className= "h-12 mr-6 sm:mr-10 sm:h-26 md:h-28 lg:h-30 hover:scale-105 transition active:scale-95"/> 
               </a>
-              <div className="text-left text-lg md:text-xl lg:text-2xl">Contact me at <br/><b><a href="mailto:nabeel.mbab@gmail.com">nabeel.mbab@gmail.com</a></b></div>
+              <div className="text-left text-base md:text-xl lg:text-2xl">Contact me at <br/><b><a href="mailto:nabeel.mbab@gmail.com">nabeel.mbab@gmail.com</a></b></div>
             </motion.div>
             <motion.div variants={childVariants} className="m-5 flex justify-start items-center w-4/5 sm:w-3/5">
               <a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">
-                <img src={linkedinLogo} alt="linkedin logo" className="h-20 mr-6 sm:mr-10 sm:h-30 md:h-32 lg:h-36 hover:scale-105 transition active:scale-95"/>         
+                <img src={linkedinLogo} alt="linkedin logo" className="h-12 mr-6 sm:mr-10 sm:h-26 md:h-28 lg:h-30 hover:scale-105 transition active:scale-95"/>         
               </a>
-              <div className="text-left text-lg md:text-xl lg:text-2xl">Connect with me on <br/> <b><a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">LinkedIn</a></b>!</div>
-              </motion.div>
+              <div className="text-left text-base md:text-xl lg:text-2xl">Connect with me on <br/> <b><a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">LinkedIn</a></b>!</div>
+            </motion.div>
+            <motion.div variants={childVariants} className='font-medium text-xs lg:text-base mb-12'><br/>Looking forward to hearing from you :-)</motion.div>
           </motion.div>
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

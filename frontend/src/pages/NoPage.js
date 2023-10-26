@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../components/Header'
 import NavBar from '../components/NavBar'
+import Footer from '../components/Footer'
 
 export default function NoPage() {
   return (
@@ -12,6 +13,7 @@ export default function NoPage() {
       <div className='text-3xl font-mono font-bold flex justify-center items-center text-center py-20'>
         Error 404: No Page found
       </div>
+      < Footer />
     </div>
   )
 }
