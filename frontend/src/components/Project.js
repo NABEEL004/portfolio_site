@@ -1,7 +1,6 @@
 import React from 'react';
-import detailsIcon from "../resources/DetailsIcon.png";
-import youtubeIcon from "../resources/play.png";
-import githubIcon from "../resources/github2.png";
+import youtubeIcon from "../resources/play2.png";
+import githubIcon from "../resources/GitHubIcon.png";
 import Language from "./Language"
 
 export default function Project(prop) {
@@ -18,8 +17,8 @@ export default function Project(prop) {
         <div className='group-hover:opacity-0 transition-all absolute bottom-[2.8rem] duration-300 group-hover:bottom-[4rem] flex flex-row translate-y-[20px]'>{language_components}</div>
         {/* <Language>Test</Language> */}
         <div className='flex translate-y-[100px] group-hover:-translate-y-6 delay-75 transition-all duration-500 overflow-hidden group-hover:scale-y-95 sm:group-hover:scale-105'>
-          <a href={prop.play} target="_blank"><div className=' mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={youtubeIcon} className="h-[48px]" alt="youtube" /></div></a>
-          <a href={github_url} target="_blank"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={githubIcon} className="h-[48px]" alt="github" /></div></a>
+          <a href={prop.play} target="_blank" rel="noreferrer"><div className=' mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={youtubeIcon} className="h-[48px]" alt="youtube" /></div></a>
+          <a href={github_url} target="_blank" rel="noreferrer"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={githubIcon} className="h-[48px]" alt="github" /></div></a>
         </div>
     </div>
   )
