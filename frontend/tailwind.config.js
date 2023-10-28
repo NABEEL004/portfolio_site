@@ -13,6 +13,7 @@ module.exports = {
     "./src/components/Project.js",
     "./src/components/Language.js",
     "./src/components/Modal.js",
+    "./src/components/Footer.js",
   ],
   theme: {
     extend: {

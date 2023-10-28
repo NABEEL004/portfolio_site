@@ -22,35 +22,14 @@ const childVariants = {
 }
 
 const project_data = [
-  { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: ['HTML', 'CSS', 'JS'], github:'html-css-js-portfolio', image: 'vanilla_portfolio.jpeg'},
-  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: ['ReactJS', 'TailwindCSS'], github:'portfolio_site', image: 'react_portfolio.jpeg'},
+  { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: ['HTML', 'CSS', 'JS'], github:'html-css-js-portfolio', play:'https://nabeel-vanilla-portfolio.netlify.app/', image: 'vanilla_portfolio.jpeg'},
+  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: ['ReactJS', 'TailwindCSS', 'Figma'], github:'portfolio_site', image: 'react_portfolio.jpeg'},
+  { name: 'Super Pong', skill: 'Game Development', description: 'A simple game of pong hosted on a website', languages: ['HTML', 'CSS', 'JS'], github:'pong-js', play:'https://nabeel-super-pong.netlify.app/', image: 'pong.png'},
   { name: 'Smart Aquaponics', skill: 'Embedded Development', description: 'A simple project showcasing elements of a smart aquaponics system', languages: ['C++'], github:'', image: 'aquaponics.jpeg'},
-  { name: 'Pong', skill: 'Game Development', description: 'A simple game of pong hosted on a website', languages: ['HTML', 'CSS', 'JS'], github:'pong-js', image: 'pong.png'},
 ]
 
 
-const about_data = [
-  {
-    img: "",
-    alt: "image of portfolio site",
-    title: "Vanilla Portfolio",
-    description: "A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript"
-  },
-  {
-    img: "",
-    alt: "image of portfolio site",
-    title: "React Portfolio",
-    description: "A frontend project to display my personal projects"
-  },
-  {
-    img: "",
-    alt: "image of demo board",
-    title: "Smart Aquaponics",
-    description: "An embedded project showcasing elements of a smart aquaponics system"
-  },
-]
-
-const projectsComponents = project_data.map((project, key) => <Project key ={key} title = {project.name} skill = {project.skill} description={project.description } language = {project.languages} image={project.image} github={project.github} />)
+const projectsComponents = project_data.map((project, key) => <Project key ={key} title = {project.name} skill = {project.skill} description={project.description } language = {project.languages} image={project.image} github={project.github} play={project.play} />)
 
 export default function Projects() {
   const breakpoints = [
