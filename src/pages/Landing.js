@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
 import logo from '../images/brown_guy.png'; 
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';

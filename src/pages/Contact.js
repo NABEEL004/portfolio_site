@@ -64,10 +64,10 @@ export default function Contact() {
               <div className="text-left text-base md:text-xl lg:text-2xl">Contact me at <br/><b><a href="mailto:nabeel.mbab@gmail.com">nabeel.mbab@gmail.com</a></b></div>
             </motion.div>
             <motion.div variants={childVariants} className="m-5 flex justify-start items-center w-4/5 sm:w-3/5">
-              <a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">
+              <a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank" rel="noreferrer">
                 <img src={linkedinLogo} alt="linkedin logo" className="h-12 mr-6 sm:mr-10 sm:h-26 md:h-28 lg:h-30 hover:scale-105 transition active:scale-95"/>         
               </a>
-              <div className="text-left text-base md:text-xl lg:text-2xl">Connect with me on <br/> <b><a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank">LinkedIn</a></b>!</div>
+              <div className="text-left text-base md:text-xl lg:text-2xl">Connect with me on <br/> <b><a href="https://www.linkedin.com/in/nabeel-mbab/" target="_blank" rel="noreferrer">LinkedIn</a></b>!</div>
             </motion.div>
             <motion.div variants={childVariants} className='font-medium text-xs lg:text-base mb-12'><br/>Looking forward to hearing from you :-)</motion.div>
           </motion.div>
