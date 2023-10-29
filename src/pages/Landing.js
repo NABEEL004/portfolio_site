@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 import logo from '../images/brown_guy.png'; 
 import Typewriter from 'typewriter-effect';
 import { motion } from 'framer-motion';
@@ -8,11 +9,13 @@ import { motion } from 'framer-motion';
 export default function Landing() {
     const [display, setDisplay] = useState(false)
     const [clicked, setClicked] = useState(false)
+    const navigate = useNavigate()
 
     useEffect(() => {
         if (clicked) {
             setTimeout(()=>{
-                window.location.href='/about';    
+                // window.location.href='/about'; 
+                navigate('/about')  
             }, 1000)  
         }
       }, [clicked]

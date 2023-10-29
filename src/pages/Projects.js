@@ -23,7 +23,7 @@ const childVariants = {
 
 const project_data = [
   { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: ['HTML', 'CSS', 'JS'], github:'html-css-js-portfolio', play:'https://nabeel-vanilla-portfolio.netlify.app/', image: 'vanilla_portfolio.jpeg'},
-  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: ['ReactJS', 'TailwindCSS', 'Figma'], github:'portfolio_site', image: 'react_portfolio.jpeg'},
+  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: ['ReactJS', 'TailwindCSS', 'Figma'], github:'portfolio_site', play:'https://nabeel-mbab.netlify.app/', image: 'react_portfolio.jpeg'},
   { name: 'Super Pong', skill: 'Game Development', description: 'A simple game of pong hosted on a website', languages: ['HTML', 'CSS', 'JS'], github:'pong-js', play:'https://nabeel-super-pong.netlify.app/', image: 'pong.png'},
   { name: 'Smart Aquaponics', skill: 'Embedded Development', description: 'A simple project showcasing elements of a smart aquaponics system', languages: ['C++'], github:'Smart-Aquaponics', play:'https://youtube.com/shorts/RVJ-CA66eXc', image: 'aquaponics.jpeg'},
 ]
