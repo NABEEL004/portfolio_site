@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Language(prop) {
   return (
-    <div className='border border-gray-600 py-0 px-2 mx-[0.1rem] rounded-2xl text-sm'>
+    <div className='border border-gray-600 py-0 px-2 mx-[0.1rem] rounded-2xl text-[0.6rem] sm:text-sm'>
         {prop.value}
     </div>
   )

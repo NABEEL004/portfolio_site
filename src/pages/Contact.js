@@ -53,7 +53,7 @@ export default function Contact() {
         <NavBar/>
       </div>
       <div className='flex flex-col sm:flex-row justify-center items-center font-mono text-lg sm:text-2xl h-[calc(100vh-216px)] sm:h-[calc(100vh-240px)] lg:h-[calc(100vh-144px)]'>
-        <div className='w-[23rem] sm:w-[36rem] md:w-[44rem] lg:w-[50rem] h-[26rem] lg:h-[32rem] flex justify-center items-center'>
+        <div className='w-[23rem] sm:w-[36rem] md:w-[44rem] lg:w-[50rem] h-[24rem] lg:h-[32rem] flex justify-center items-center'>
           <motion.div variants={parentVariants} initial="hidden" animate="visible" className='flex flex-col w-[50rem] justify-center items-center bg-[rgba(0,0,0,0)] border border-gray-300 rounded-2xl text-black font-medium'>
             <motion.div variants={childVariants} className='font-black text-3xl lg:text-4xl mt-12'>Nabeel Muhammad</motion.div>
             <motion.div variants={childVariants} className='font-medium text-base lg:text-lg'>Aspiring Developer</motion.div>
