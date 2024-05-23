@@ -22,11 +22,78 @@ const childVariants = {
 }
 
 const project_data = [
-  { name: 'React Portfolio', skill: 'Front-end Development', description: 'A front-end development project to display my personal projects.', languages: ['ReactJS', 'TailwindCSS', 'Figma'], github:'portfolio_site', play:'https://nabeel-mbab.netlify.app/', image: 'react_portfolio.jpeg'},
-  { name: '2D Retro Shooter', skill: 'Game Development', description: 'A 2D shooter game with a retro feel', languages: ['HTML', 'CSS', 'JS'], github:'shooter-js', play:'https://nabeel-mbab-shooter.netlify.app/', image: 'shooter.png'},
-  { name: 'Super Pong', skill: 'Game Development', description: 'A simple game of pong hosted on a website', languages: ['HTML', 'CSS', 'JS'], github:'pong-js', play:'https://nabeel-super-pong.netlify.app/', image: 'pong3.png'},
-  { name: 'Vanilla Portfolio', skill: 'Front-end Development', description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', languages: ['HTML', 'CSS', 'JS'], github:'html-css-js-portfolio', play:'https://nabeel-vanilla-portfolio.netlify.app/', image: 'vanilla_portfolio.jpeg'},
-  { name: 'Smart Aquaponics', skill: 'Embedded Development', description: 'A simple project showcasing elements of a smart aquaponics system', languages: ['C++', 'ESP32'], github:'Smart-Aquaponics', play:'https://youtube.com/shorts/RVJ-CA66eXc', image: 'aquaponics.jpeg'},
+  { 
+    name: 'Dump.', 
+    skill: 'Full-Stack Development', 
+    description: 'A convenient, collaborative to-do web application', 
+    languages: ['Remix', 'Supabase', 'TypeScript'],
+    github:'', 
+    play:'https://remix-dump.vercel.app', 
+    image: 'dump.png'
+  },
+  { 
+    name: '2D Retro Shooter', 
+    skill: 'Game Development', 
+    description: 'A 2D shooter game with a retro feel', 
+    languages: ['HTML', 'CSS', 'JS'], 
+    github:'shooter-js', 
+    play:'https://nabeel-mbab-shooter.netlify.app/', 
+    image: 'shooter.png'
+  },
+  { 
+    name: 'React Portfolio', 
+    skill: 'Front-end Development', 
+    description: 'A front-end development project to display my personal projects.', 
+    languages: ['ReactJS', 'TailwindCSS', 'Figma'], 
+    github:'portfolio_site', 
+    play:'https://nabeel-mbab.netlify.app/', 
+    image: 'react_portfolio.jpeg'
+  },
+  { 
+    name: 'Telegram Heist Bot', 
+    skill: 'Telegram Bot', 
+    description: 'An interactive telegram bot helper used for a detective game.', 
+    languages: ['Python', 'Telegram'], 
+    github:'heist_bot', 
+    play:'https://youtu.be/1LCJEmibxq4', 
+    image: 'heist.png'
+  },
+  { 
+    name: 'Posture Monitoring App', 
+    skill: 'Computer Vision/ML', 
+    description: 'A web app that can detect and classify posture', 
+    languages: ['HTML/JS', 'Flask', 'Mediapipe'], 
+    github:'posture_monitor', 
+    play:'https://youtu.be/5QpxdAe9At8?si=yCxvHmsGTDFStShK', 
+    image: 'posture.png'
+  },
+  { 
+    name: 'Super Pong', 
+    skill: 'Game Development', 
+    description: 'A simple game of pong hosted on a website', 
+    languages: ['HTML', 'CSS', 'JS'], 
+    github:'pong-js',
+    play:'https://nabeel-super-pong.netlify.app/', 
+    image: 'pong3.png'
+  },
+  { 
+    name: 'Vanilla Portfolio', 
+    skill: 'Front-end Development', 
+    description: 'A frontend dev project to learn and revisit vanilla HTML, CSS and JavaScript', 
+    languages: ['HTML', 'CSS', 'JS'],  
+    github:'html-css-js-portfolio', 
+    play:'https://nabeel-vanilla-portfolio.netlify.app/', 
+    image: 'vanilla_portfolio.jpeg'
+  },
+  { 
+    name: 'Smart Aquaponics', 
+    skill: 'Embedded Development', 
+    description: 'A simple project showcasing elements of a smart aquaponics system', 
+    languages: ['C++', 'ESP32'], 
+    github:'Smart-Aquaponics', 
+    play:'https://youtube.com/shorts/RVJ-CA66eXc', 
+    image: 'aquaponics.jpeg'
+  },
 ]
 
 
@@ -37,6 +104,7 @@ export default function Projects() {
     { width: 1, itemsToShow: 1 },
     { width: 650, itemsToShow: 2 },
     { width: 1000, itemsToShow: 3 },
+    { width: 1200, itemsToShow: 4 },
   ]
 
   return (

@@ -18,7 +18,9 @@ export default function Project(prop) {
         {/* <Language>Test</Language> */}
         <div className='flex translate-y-[100px] group-hover:-translate-y-6 delay-75 transition-all duration-500 overflow-hidden group-hover:scale-y-95 sm:group-hover:scale-105'>
           <a href={prop.play} target="_blank" rel="noreferrer"><div className=' mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={youtubeIcon} className="h-[36px] sm:h-[48px]" alt="youtube" /></div></a>
-          <a href={github_url} target="_blank" rel="noreferrer"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={githubIcon} className="h-[36px] sm:h-[48px]" alt="github" /></div></a>
+          {prop.github !== '' ? 
+            <a href={github_url} target="_blank" rel="noreferrer"><div className='mx-2 opacity-0 group-hover:opacity-100 transition-all duration-300 delay-150 rounded-full'><img src={githubIcon} className="h-[36px] sm:h-[48px]" alt="github" /></div></a>
+          : ''}
         </div>
     </div>
   )
